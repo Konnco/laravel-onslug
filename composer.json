@@ -1,16 +1,16 @@
 {
-    "name": ":vendor_name/:package_name",
-    "description": ":package_description",
+    "name": "konnco/laravel-onslug",
+    "description": "Easy way to generate slug",
     "keywords": [
-        ":vendor_name",
-        ":package_name"
+        "konnco",
+        "laravel-onslug"
     ],
-    "homepage": "https://github.com/:vendor_name/:package_name",
+    "homepage": "https://github.com/konnco/laravel-onslug",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
+            "name": "Franky So",
+            "email": "frankyso.mail@gmail.com",
             "homepage": "https://spatie.be",
             "role": "Developer"
         }
@@ -26,19 +26,19 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Skeleton\\": "src",
-            "Spatie\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Konnco\\OnSlug\\": "src",
+            "Konnco\\OnSlug\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Skeleton\\Tests\\": "tests"
+            "Konnco\\OnSlug\\Tests\\": "tests"
         }
     },
     "scripts": {
-        "psalm": "vendor/bin/psalm",
-        "test": "vendor/bin/phpunit --colors=always",
-        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+        "psalm": "vendor\\bin\\psalm",
+        "test": "vendor\\bin\\phpunit --colors=always",
+        "test-coverage": "vendor\\bin\\phpunit --coverage-html coverage"
     },
     "config": {
         "sort-packages": true
@@ -46,10 +46,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\Skeleton\\SkeletonServiceProvider"
+                "Konnco\\OnSlug\\OnSlugServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "Spatie\\Skeleton\\SkeletonFacade"
+                "OnSlug": "Konnco\\OnSlug\\OnSlugFacade"
             }
         }
     },

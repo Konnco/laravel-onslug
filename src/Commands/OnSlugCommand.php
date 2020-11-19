@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\Skeleton\Commands;
+namespace Konnco\OnSlug\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class OnSlugCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-onslug';
 
     public $description = 'My command';
 
