@@ -24,6 +24,7 @@ trait OnSlug
                 goto recheck_slug;
             } else {
                 $model->slug = $slug;
+
                 return $model;
             }
         });
